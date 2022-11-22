@@ -4,7 +4,8 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('liver.pkl', 'rb'))
 
-@app.route('/')
+@app.route("/")
+
 def my_form():    
     return render_template("index.html")
 
